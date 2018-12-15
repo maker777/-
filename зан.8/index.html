@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="text-left">left</div>
+        <div class="text-center">cenetr</div>
+        <div class="text-right">right</div>
+        
+        <button type="button" class="btn btn-default btn-xs">Default</button>
+        <button type="button" class="btn btn-primary btn-sm">Primary</button>
+        <button type="button" class="btn btn-success btn-lg">Sucess</button>
+        <button type="button" class="btn btn-info btn-block">Info</button>
+        <button type="button" class="btn btn-warning disabled">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        
+        <ul class="list-group">
+            <li class="list-group-item">Plato</li>
+            <li class="list-group-item active">Konfuzius</li>
+            <li class="list-group-item">Socrates</li>
+            <li class="list-group-item">Voltainer</li>
+            <li class="list-group-item">Descartes</li>
+        </ul>
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Заголовок</h3>
+            </div>
+            <div class="panel-body">
+                Содержимое
+            </div>
+        </div>
+        
+        <div id="window" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+                <h4 class="modal-title">Заголовок</h4>
+        </div>
+            <div class="modal-body">
+                <p>Содержимое</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Закрыть
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Сохранить
+                </button>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+        
+        <button type="button" id="launcher" class="btn btn-primary btn-lg">
+            Запустить модальное окно
+        </button>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <script>
+            $("#launcher").on("click",function() {
+                $("#window").modal("show");
+            });
+        </script>
+    </body>
+</html>

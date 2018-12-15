@@ -1,0 +1,40 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+}
+
+.field {
+    width: 400px;
+    height: 400px;
+    background-color: #9775AA;
+    border-radius: 5px;
+    position: relative;
+}
+
+.field-cell {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 3px;
+}
+
+.field-cell-null {
+    background-color: #764B8E;
+}
+
+.field-cell-tile {
+    background-color: #3D1255;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
