@@ -1,0 +1,13 @@
+html,body {
+    margin: 0;
+    height: 2000px;
+}
+
+header {
+    height: 1000px;
+    width: inherit;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+}
